@@ -1,31 +1,29 @@
 import React from 'react';
-
-class Home extends React.Component{
-    render(){
+import {Link} from "react-router-dom";
+const Home=() =>{
+    const link="nav-item nav-link";
         return(
+          
           <div>
-    {/* <div id="spinner" className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div className="spinner-grow text-primary" role="status"></div>
-    </div>
-    */}
+    
     <div className="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div className="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
             <div className="col-lg-6 px-5 text-start">
-                <small><i className="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-                <small className="ms-4"><i className="fa fa-envelope me-2"></i>info@example.com</small>
+                <small><i className="fa fa-map-marker-alt me-2"></i>RVCE, Bangalore, India</small>
+                <small className="ms-4"><i className="fa fa-envelope me-2"></i>akankshaapai.cs20@rvce.edu.in</small>
             </div>
             <div className="col-lg-6 px-5 text-end">
                 <small>Follow us:</small>
-                <a className="text-white-50 ms-3" href="https://www.google.co.in/"><i className="fab fa-facebook-f"></i></a>
-                <a className="text-white-50 ms-3" href="https://www.google.co.in/"><i className="fab fa-twitter"></i></a>
-                <a className="text-white-50 ms-3" href="https://www.google.co.in/"><i className="fab fa-linkedin-in"></i></a>
-                <a className="text-white-50 ms-3" href="https://www.google.co.in/"><i className="fab fa-instagram"></i></a>
+                <a className="text-white-50 ms-3" href="https://www.facebook.com/"><i className="fab fa-facebook-f"></i></a>
+                <a className="text-white-50 ms-3" href="https://twitter.com/"><i className="fab fa-twitter"></i></a>
+                <a className="text-white-50 ms-3" href="https://in.linkedin.com/"><i className="fab fa-linkedin-in"></i></a>
+                <a className="text-white-50 ms-3" href="https://www.instagram.com/"><i className="fab fa-instagram"></i></a>
             </div>
         </div>
 
         <nav className="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" className="navbar-brand ms-4 ms-lg-0">
-                <h1 className="fw-bold text-primary m-0">Chari<span className="text-white">Team</span></h1>
+                <h1 className="fw-bold text-primary m-0">NGO<span className="text-white">Connect</span></h1>
             </a>
             <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span className="navbar-toggler-icon"></span>
@@ -33,7 +31,9 @@ class Home extends React.Component{
             <div className="collapse navbar-collapse" id="navbarCollapse">
                 <div className="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="index.html" className="nav-item nav-link active">Home</a>
-                    <a href="about.html" className="nav-item nav-link">About</a>
+                    
+                    <Link to="/about" className={link}>About</Link>
+                    
                     <a href="causes.html" className="nav-item nav-link">Causes</a>
                     <div className="nav-item dropdown">
                         <a href="https://www.google.co.in/" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -478,7 +478,7 @@ class Home extends React.Component{
         <div className="container py-5">
             <div className="row g-5">
                 <div className="col-lg-3 col-md-6">
-                    <h1 className="fw-bold text-primary mb-4">Chari<span className="text-white">Team</span></h1>
+                    <h1 className="fw-bold text-primary mb-4">NGO<span className="text-white">Connect</span></h1>
                     <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita</p>
                     <div className="d-flex pt-2">
                         <a className="btn btn-square me-1" href="https://www.google.co.in/"><i className="fab fa-twitter"></i></a>
@@ -543,7 +543,7 @@ class Home extends React.Component{
     <script src="assets/js/main.js"></script> 
     </div>
         );
-    }
-}
+    };
+
 
 export default Home;
